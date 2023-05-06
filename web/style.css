@@ -11,18 +11,8 @@ body {
     font-family: "Golos Text", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e4dcbc;
+    background-color: #191a1b;
 }
-
-.decorationf {
-    width: 200px;
-    opacity: .8;
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
-}
-
-
 
 /*---- HEADER ----*/
 header {
@@ -30,62 +20,12 @@ header {
 }
 
 .banner {
-    font-size: 25px;
-    padding: 50px;
+    font-size: 15px;
+    padding: 5px;
     text-align: center;
     color: #fff;
-    background-color: #1C6758;
+    background-color: #0e1011;
 }
-
-.decoration1, .decoration2{
-    position: absolute;
-    width: 270px;
-}
-
-.decoration1{
-    right: 2rem;
-}
-
-.decoration2{
-    left: 2rem;
-}
-
-
-
-
-/* _______ NAVIGATION ______*/
-nav {
-    background-color: #3D8361;
-    padding: 8px;
-    position: sticky;
-    top: 0;
-}
-
-nav ul {
-    padding-inline: 5rem;
-    display: flex;
-    gap: 3rem;
-}
-
-nav li {
-    list-style-type: none;
-}
-   
-nav a {
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border-radius: 30px;
-    color: white;
-}
-
-nav a:hover {
-    font-weight: bold;
-    color: #123830;
-    background-color: white;
-}
-
 
 
 /*---- MAIN ----*/
@@ -95,12 +35,34 @@ main {
     gap: 1.5rem;
 }
 
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .profile-text {
+    color: rgb(253, 211, 24);
+  }
+
 h2 {
-    color: #123830;
+    color: #ffffff;
 }
    
 h3 {
-    color: #123830;
+    color: #ffffff;
+}
+
+p {
+    color: white;
+}
+
+td {
+    color: white;
+}
+
+th {
+    color: white;
 }
 
 #content {
@@ -125,6 +87,7 @@ h3 {
 /* _______ ASIDE ______*/
 aside {
     flex: 1;
+    padding-right: 50px;
 }
 
 .myprofile {
@@ -150,22 +113,20 @@ aside {
 
 .socmed li a {
     text-decoration: none;
-    color: #123830;
+    color: #ffffff;
     font-size: 2rem;
 }
 
 .socmed li a:hover {
-    color: rgb(50, 158, 117);
+    color: rgb(253, 211, 24);
 }
-
-
 
 
 /*---- FOOTER ----*/
 footer {
     padding: 20px;
     color: #fff;
-    background-color: #3D8361;
+    background-color: #0e1011;
     text-align: center;
 }
 
@@ -176,8 +137,8 @@ footer {
 .card {
     box-shadow: 0 2px 8px 2px rgba(19, 14, 46, 0.2);
     border-radius: 50px 0px 50px 0px;
-    padding: 50px;
-    background-color: white;
+    padding: 30px;
+    background-color: #0e1011;
 }
 
 
@@ -202,23 +163,10 @@ footer {
       width: 100%;
       padding: 0;
     }
-
-    .decoration1, .decoration2{
-        width: 200px;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
-    nav ul {
-        justify-content: center;
-    }
-     
     main aside {
         align-self: stretch;
-    }
-
-    .decoration1, .decoration2{
-        opacity: 0.3;
     }
 }
