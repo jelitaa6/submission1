@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* ~~~ BODY ~~~~` */
+body {
+    font-family: "Golos Text", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4dcbc;
+}
+
+.decorationf {
+    width: 200px;
+    opacity: .8;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/*---- HEADER ----*/
+header {
+    display: inline;
+}
+
+.banner {
+    font-size: 25px;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #1C6758;
+}
+
+.decoration1, .decoration2{
+    position: absolute;
+    width: 270px;
+}
+
+.decoration1{
+    right: 2rem;
+}
+
+.decoration2{
+    left: 2rem;
+}
+
+
+
+
+/* _______ NAVIGATION ______*/
+nav {
+    background-color: #3D8361;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 5rem;
+    display: flex;
+    gap: 3rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+   
+nav a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border-radius: 30px;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #123830;
+    background-color: white;
+}
+
+
+
+/*---- MAIN ----*/
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+h2 {
+    color: #123830;
+}
+   
+h3 {
+    color: #123830;
+}
+
+#content {
+    flex: 2.2;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+    text-align: justify;
+}
+
+.myimages {
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    float: left;
+    margin-right: 22px;
+    margin-bottom: 18px;
+}
+
+
+/* _______ ASIDE ______*/
+aside {
+    flex: 1;
+}
+
+.myprofile {
+    border-radius: 18px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile table {
+    text-align: left;
+}
+
+.socmed ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-inline: 5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.socmed li a {
+    text-decoration: none;
+    color: #123830;
+    font-size: 2rem;
+}
+
+.socmed li a:hover {
+    color: rgb(50, 158, 117);
+}
+
+
+
+
+/*---- FOOTER ----*/
+footer {
+    padding: 20px;
+    color: #fff;
+    background-color: #3D8361;
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 2px 8px 2px rgba(19, 14, 46, 0.2);
+    border-radius: 50px 0px 50px 0px;
+    padding: 50px;
+    background-color: white;
+}
+
+
+
+
+
+/*==================================================================*/
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+        
+    main aside {
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+
+    .decoration1, .decoration2{
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+     
+    main aside {
+        align-self: stretch;
+    }
+
+    .decoration1, .decoration2{
+        opacity: 0.3;
+    }
+}
